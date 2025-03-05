@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyProfile</title>
+
+    <style>
+        /* Carrega a fonte personalizada Gothic War */
+        @font-face {
+            font-family: 'Fantasma';
+            src: url('Ghastly Panic.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'takamiviadinho';
+            src: url('soopafre.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+    
+        @font-face {
+            font-family: 'raelviadinho';
+            src: url('Darksoul.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }  
+        @font-face {
+            font-family: 'yunaviadinho';
+            src: url('MetalGothic.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        } 
+        h5 {
+            font-family: 'yunaviadinho';
+            font-weight: normal;
+            font-style: normal;
+        }
+    
+        h4 {
+            font-family: 'raelviadinho';
+            font-weight: normal;
+            font-style: normal;
+        }
+        h2 {
+            font-family: 'takamiviadinho';
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+
+        h1 {
+            font-family: 'Fantasma';
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            background-image: url('https://i.pinimg.com/736x/f9/4d/95/f94d95da74ed0078592ab528c176149b.jpg');
+            background-size: cover;
+            height: 100vh;
+            margin: 0;
+            color: white;
+        }
+
+        /* Estiliza o título principal */
+        h1 {
+            font-size: 100px;
+            color: rgb(40, 40, 40);
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 75px;
+            z-index: 2;
+        }
+
+        .quadrado {
+            width: 500px;
+            height: 600px;
+            background-color: rgb(63, 63, 63);
+            opacity: 0.5;
+            margin: 20px;
+            border: 2px solid rgba(97, 97, 97, 0.432);
+            border-radius: 30px;
+            margin-top: -100px;
+            position: fixed;
+            top: 150px;
+            right: 350px;
+        }
+
+        .quadrado3 {
+            width: 200px;
+            height: 300px;
+            background-color: rgb(28, 27, 27);
+            margin: 20px;
+            border: 2px solid rgb(28, 27, 27);
+            border-radius: 10px;
+            background-image: url('https://i.pinimg.com/736x/bf/aa/db/bfaadbe2dc9f41f6ef4f3a186ac89d95.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            bottom: -35px;
+            right: 700px;
+            z-index: 3;
+        }
+
+        body {
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .quadrado3 {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            width: 150px;
+            height: 150px;
+            background-color: rgb(63, 63, 63);
+            opacity: 0.7;
+            border-radius: 20px;
+            transition: all 1.0s ease-in-out;
+            z-index: 6;
+        }
+
+        .quadrado3:hover {
+            width: 200px;
+            height: 300px;
+            bottom: 50%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+            opacity: 1;
+            background-color: rgb(97, 97, 97);
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+        
+        }
+
+        .circulo {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(11, 11, 11);
+            border-radius: 50%;
+            right: 420px;
+            left: 420px;
+            top: 100px;
+            position: fixed;
+            background-image: url('https://i.pinimg.com/474x/8b/4c/ab/8b4cabd6fc3a97b9ca33fc602dd143d1.jpg');
+            background-size: cover;
+        }
+
+        .quadrado22 {
+            width: 470px;
+            height: 400px;
+            background-color: rgb(87, 87, 87);
+            margin: 20px;
+            opacity: 0.7;
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 20%;
+            box-sizing: border-box;
+            position: fixed;
+            top: 250px;
+            right: 368px;
+            z-index: 4;
+             /* Garante que o quadrado22 fique atrás de outros elementos, mas visível */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>My Profile</h1>
+
+    <div class="quadrado"></div>
+
+    <div class="quadrado3"></div>
+
+    <div class="circulo"></div>
+
+    <div class="quadrado22"></div> <!-- Agora está com o fundo mais claro e visível -->
+    
+    <!-- Links para redes sociais -->
+    <a href="https://www.instagram.com/rael.yamada?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+        <img src="Instagram.png" alt="Instagram" style="width: 75px; height: 75px; position: fixed; right: 420px; top: 180px; left: 750px;">
+    </a>
+
+    <a href="https://discord.com/channels/@me/1339057730140373003">
+        <img src="Discord.png" alt="Discord" style="width: 75px; height: 75px; position: fixed; right: 450px; top: 93px; left: 750px;">
+    </a>
+
+    <img src="Certificado roblox.png" alt="Certificado Roblox" style="width: 20px; height: 20px; position: fixed; right: 250px; top: 145px; left: 690px;">
+
+    <img src="html.png" alt="HTML" style="position: fixed; top: 180px; width: 20px; height: 20px; left: 540px;">
+    <img src="C++.png" alt="CPP" style="position: fixed; top: 180px; width: 30px; height: 25px; left: 555px;">
+    
+    <h2 style="position: fixed; top: 120px; width: 80px; height: 80px; right: px; left: 540px;">!Revoltz022</h2>
+
+</body>
+ <body>
+ 
+<h3 style=" position: fixed; top: 146px; z-index: 4; left: 540px;">Rael</h3>
+
+
+<h4 style="font-size: xx-large; z-index: 4;position: fixed; left: 480px; top: 185px;">Biografia</h4>
+
+<h5 style="z-index: 4;position: fixed; left: 460px; top: 260px; font-size: 28px;"> "Esperança é a ultima que morre"
+<br>O tecido rompe a fronteira
+
+E <br> a água corrompe a madeira <!--Quebra de Linha-->
+<br>Da casa na beira da vala <br> 
+Várias goteiras no teto de vidro (fala) <br>
+<br>I'm the blessed by God
+</h5>
+
+<h5 style="color: rgb(#FFFF00, #ff0a0a, #FFFF00 ) ;z-index: 4;position: fixed; left: 620px; top: 460px; font-size: 28px;"> God</h5>
+
+
+
+<audio id="player" src="Like Him.mp3" preload="auto"></audio>
+
+<!-- Botões -->
+<button onclick="document.getElementById('player').play()" style="z-index: 5; position: fixed; top: 190px; left: 585px;">▶️ Tocar</button>
+<button onclick="document.getElementById('player').pause()" style="z-index: 5;position: fixed; top: 190px; left: 660px;">⏸️ Pausar</button>
+
+
+<!--Esse foi o projeto mais dificeis
+que ja fizemos ate agora, e ainda não terminamos.-->
+
+
+</body>
+</html>
